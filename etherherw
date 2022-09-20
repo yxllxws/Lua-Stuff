@@ -37,13 +37,13 @@ Environment.Settings = {
     Sensitivity = 0, -- Animation length (in seconds) before fully locking onto target
     TriggerKey = "MouseButton2",
     Toggle = false,
-    LockPart = "Head" -- Body part to lock on
+    LockPart = "HumanoidRootPart" -- Body part to lock on
 }
 
 Environment.FOVSettings = {
     Enabled = true,
     Visible = true,
-    Amount = 90,
+    Amount = 190,
     Color = Color3.fromRGB(255, 255, 255),
     LockedColor = Color3.fromRGB(255, 70, 70),
     Transparency = 0.5,
