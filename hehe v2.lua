@@ -5,11 +5,11 @@ if _G.Disabled then
 for i,v in next, game:GetService('Players'):GetPlayers() do
 if v.Name ~= game:GetService('Players').LocalPlayer.Name then
 pcall(function()
-v.Character.Head.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)
-v.Character.Head.Transparency = 0
-v.Character.Head.BrickColor = BrickColor.new("Really blue")
-v.Character.Head.Material = "Plastic"
-v.Character.Head.CanCollide = true
+v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)
+v.Character.HumanoidRootPart.Transparency = 0.05
+v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really blue")
+v.Character.HumanoidRootPart.Material = "Plastic"
+v.Character.HumanoidRootPart.CanCollide = true
 end)
 end
 end
